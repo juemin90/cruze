@@ -14,5 +14,5 @@ def getMysql():
         "database": "odds",
         "port": 3306,
     }
-    db = pymysql.connect(host=config['host'], user=config['username'], password=config['password'], database=config['database'], port=kjconfig['port'])
+    db = pymysql.connect(host=config['host'], user=config['username'], password=config['password'], database=config['database'], port=config['port'])
     return db
